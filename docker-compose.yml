@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  server:
+    build: 
+      context: ./server
+      dockerfile: Dockerfile
+    command: npm run devserver
+    ports:
+      - '8080:8080'
+    tty: true
+    volumes:
+      - ./server:/usr/src/server
