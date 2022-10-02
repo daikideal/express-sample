@@ -1,4 +1,4 @@
-import { server } from "./application"
+import { server } from "../application"
 
 const port:number = 8080;
 server.listen(port, () => {

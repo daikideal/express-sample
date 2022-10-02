@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "server": "ts-node server.ts",
-    "devserver": "ts-node-dev server.ts"
+    "server": "ts-node bin/server.ts",
+    "devserver": "ts-node-dev bin/server.ts"
   },
   "keywords": [],
   "author": "",
