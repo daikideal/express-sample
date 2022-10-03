@@ -1,19 +1,7 @@
 import request from "supertest";
 import { server } from "../application";
 
-describe("/", () => {
-  test("It should return status 200", done => {
-    request(server)
-      .get("/")
-      .then(response => {
-        expect(response.statusCode).toBe(200);
-
-        done();
-      });
-  });
-});
-
-describe("/user", () => {
+describe("/users", () => {
   test("It should return all users", done => {
     request(server)
       .get("/users")
